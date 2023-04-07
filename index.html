@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock Paper Scissors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <script src="script.js"></script>
+  </head>
+  <body>
+    <!--CLICKING SOUND-->
+    <audio id="click-sound-effect">
+      <source src="/sounds/Click - Sound Effect.mp3" type="audio/mpeg">
+    </audio>
+    <!--TYPING YOUR NAME-->
+    <div id="name-container">
+      <div id="name-text">
+        <P>TYPE YOUR NAME</P>
+        </div>
+        <div id="name-button">
+          <form>
+            <div id="name-input-container">
+            <input type="text" id="name-input" name="fname" 
+            placeholder="Please enter your name" minlength="4" maxlength="12" required onclick="RemoveWarn()">
+          </div>
+          </form>
+          <p id="wrong-message">You should enter your name first!</p>
+          <button id="name-next" onclick="NextOne()">Next</button>
+        </div>
+    </div>
+    <!--CHOOING YOUR MODE-->
+    <div id="options-container">
+      <div id="modes-text">
+      <P>CHOOSE YOUR DIFFICULTY</P>
+      </div>
+      <div id="modes-buttons">
+      <button id="eazy-mode" onclick="EazyMode()">EAZY</button>
+      <button id="normal-mode" onclick="NormalMode()">NORMAL</button>
+      <button id="hard-mode" onclick="HardMode()">HARD</button>
+      </div>
+      <div class="modes-buttons-back">
+      <button id="mode-back" onclick="BackOne()">Back</button>
+      </div>
+    </div>
+    <!--GAME CONTAINER-->
+    <div id="game-container">
+      <div class="player-result">
+      <p id="player-one">Player:</p>
+      <p id="result-text">You Won!</p>
+      <p id="player-two">Computer:</p>
+      </div>
+      <div class="game-class">
+        <div id="player-container">
+        <img id="player-rock" src="./images/player-rock.png" alt="">
+        <img id="player-paper" src="./images/player-paper.png" alt="">
+        <img id="player-scissors" src="./images/player-scissors.png" alt="">
+      </div>
+      <img id="seperate-wall" src="./images/separate wall.jpg" alt="">
+      <div id="computer-container">
+        <div id="computer-message-container">
+        <p id="computer-message">I defeated you!</p>
+      </div>
+        <img id="computer-rock" src="./images/computer-rock.png" alt="">
+        <img id="computer-paper" src="./images/computer-paper.png" alt="">
+        <img id="computer-scissors" src="./images/computer-scissors.png" alt="">
+      </div>
+      </div>
+      <div id="buttons-of-tools">
+         <button id="rock-button" onclick="RockButton()">ROCK</button>
+         <button id="paper-button" onclick="PaperButton()">PAPER</button>
+         <button id="scissors-button" onclick="ScissorsButton()">SCISSORS</button>
+      </div>
+    </div>
+  </body>
+</html
