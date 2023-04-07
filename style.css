@@ -22,6 +22,7 @@ body{
     margin: auto;
     width: max-content;
     display: block;
+    margin: 0px 20px;
 }
 #name-text p{
     color: white;
@@ -70,6 +71,7 @@ body{
     display: none;
     margin: auto;
     width: max-content;
+    margin: 0px 20px;
 }
 #modes-text p{
     color: white;
@@ -78,7 +80,7 @@ body{
     font-size: 50px;
 }
 #modes-buttons button{
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(61, 61, 61);
     color: white;
     border: 0px;
     border-radius: 50px;
@@ -207,7 +209,7 @@ body{
 }
 #computer-message-container{
     position: relative;
-    top: 130px;
+    top: 120px;
     width: 300px;
     background-color: rgba(0, 0, 0, 0);
     border: 0px;
@@ -219,6 +221,7 @@ body{
     font-size: 30px;
 }
 #computer-rock{
+    display: block;
     width: 350px;
     height: 350px;
     position: relative;
@@ -250,11 +253,13 @@ body{
     border: 0px;
     border-radius: 5px;
     padding: 20px;
-    margin-left: 20px;
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(61, 61, 61);
     color: white;
     font-size: 30px;
     text-align: center;
+}
+#paper-button{
+    margin: 0px 20px;
 }
 #buttons-of-tools button:hover{
     transform: 0.5s;

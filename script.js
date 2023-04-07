@@ -137,10 +137,10 @@ function ScissorsButton(){
           ClickSound();
           $timer = setInterval(function(){
           $playerScissors = 1;
-          document.getElementById("player-rock").style.transition = "0.3s";
-          document.getElementById("player-rock").style.rotate = "-50deg";
           document.getElementById("computer-rock").style.transition = "0.3s";
           document.getElementById("computer-rock").style.rotate = "50deg";
+          document.getElementById("player-rock").style.transition = "0.3s";
+          document.getElementById("player-rock").style.rotate = "-50deg";
           $sec ++;
           if($sec === 2){
             clearInterval($timer);
@@ -162,7 +162,7 @@ function ScissorsButton(){
 function getComputerChoice(){
     $computerChoise = Math.floor(Math.random() * 3);
     if($computerChoise == 0){
-    document.getElementById("computer-rock").style.display = "block";
+    document.getElementById("computer-rock").style.display = "block";    
     } else if($computerChoise == 1){
     document.getElementById("computer-rock").style.display = "none";
     document.getElementById("computer-paper").style.display = "block";
